@@ -135,7 +135,7 @@ function register($mac) {
 ?>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" media="all" href="http://www.qccolab.com/wp-content/uploads/montezuma/style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="style.css" />
 </head>
 <body>
 

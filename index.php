@@ -1,4 +1,4 @@
-<?
+<?php
 // HACKING HINT: Replace getConnectedMachines() with a function that returns an array of the MACs connected
 // to your wireless router.
 
@@ -133,8 +133,12 @@ function register($mac) {
     }
 
 ?>
-<body bgcolor=black>
-<font color=white>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" media="all" href="http://www.qccolab.com/wp-content/uploads/montezuma/style.css" />
+</head>
+<body>
+
 <?
 connectDB();
 $mac = resolveRemoteMac();
@@ -170,10 +174,12 @@ if ("$mac" != "")
 ?>
 <form action="index.php" method="post">
 <table>
-<tr><td><font color=white>String:<td><input name=string size=100><br>
-<tr><td><font color=white>Password:<td><input name=password type=password> 
-<tr><td><font color=white>Password:<td><input name=password2 type=password> 
+<tr><td><font>String:</td><td><input name=string size=100><br></td></tr>
+<tr><td><font>Password:</td><td><input name=password type=password></td></tr>
+<tr><td><font>Password:</td><td><input name=password2 type=password></td></tr>
 <tr><td><input type=submit name=register>
 </table>
 </form>
-<? } ?>
+</body>
+</html>
+<?php } ?>

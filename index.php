@@ -12,7 +12,7 @@ $COMMUNITY = "public";
 /// The object ID we'll walk in order to enumerate the connected machines
 $OBJECT_ID = "iso.3.6.1.4.1.14988.1.1.1.2.1.3";
 /// Directory name to store the database.  Must be writeable by webserver.
-$DBNAME = "/home/drachs/FacilityMonitorDb";
+$DBNAME = "/srv/FacilityMonitor";
 /// Path to arp
 $ARP = "/usr/sbin/arp";
 /// Path to awk

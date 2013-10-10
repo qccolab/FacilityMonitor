@@ -4,7 +4,7 @@
 
 // ************* Edit the Following Values to Match your Install ******************
 /// MOTD
-$MOTD = "<h2>Welcome to the QC Co-Lab!<h2> <h3>The following users are in residence:<h3>";
+$MOTD = "Welcome to the QC Co-Lab! The following users are in residence:";
 /// The host of the Mikrotik router
 $HOST = "172.27.72.1";
 /// The community string to use when accessing the router

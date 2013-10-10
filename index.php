@@ -135,7 +135,7 @@ function register($mac) {
 ?>
 <html class="notie67 wf-yanonekaffeesatz-n4-active wf-yanonekaffeesatz-n2-active wf-active">
 <head>
-<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+<!--<link rel="stylesheet" type="text/css" media="all" href="style.css" /> -->
 <script type='text/javascript' src='http://www.qccolab.com/wp-content/uploads/montezuma/javascript.js?ver=3.6.1'></script>
 </head>
 <body>

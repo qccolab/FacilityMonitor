@@ -4,7 +4,7 @@
 
 // ************* Edit the Following Values to Match your Install ******************
 /// MOTD
-$MOTD = "<h2>Welcome to the QC Co-Lab!</h2> <h3>The following users are in residence:</h3>";
+$MOTD = "<h2>The following people are in residence at the QC Co-Lab:</h2>";
 /// The host of the Mikrotik router
 $HOST = "172.27.72.1";
 /// The community string to use when accessing the router
@@ -111,7 +111,7 @@ function register($mac) {
     if ($mac == "")
      die("Can't register from the wired network");
      
-    $string = $db->quote($_POST['string']);
+    $string = $db->quote(preg_replace("/[^A-Za-z0-9 ]/", '', $_POST['string']));
     $password = $db->quote($_POST['password']); 
     $qmac = $db->quote($mac);
     
@@ -164,10 +164,10 @@ foreach ($ret as $key => $val) {
     
 echo("<br>And $otherUsers unregistered users.<br><br>");
 
-echo("If you're on the local network, and you own the client machine you're accessing this system from");
-echo(" you may register it as an arbitrary string.  You may use any string you like but please do not be crude.");
-echo(" The password field is optional, and will prevent future users from changing the registration of this machine.");
-echo(" Register the machine as 'ignoreme' to prevent it's inclusion in the list of strings or in the count of unregistered machines.");
+echo("If you're at the QC Co-Lab, and you own the client machine you're accessing this page from");
+echo(" you can register it so that others can know when you're at the QC Co-Lab.  You may use any string you like but please do not be crude.");
+echo(" The password field is optional, but using it will prevent future users from changing the registration of this machine.");
+echo(" If you'd rather not show up on the facility monitor at all, simply register with the id 'ignoreme'.  Your device will not appear as either a guest or a registered user.");
 
 if ("$mac" != "")
  {

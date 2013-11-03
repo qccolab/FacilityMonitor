@@ -162,15 +162,15 @@ foreach ($ret as $key => $val) {
         echo $string."<br>";
     }
     
-echo("<br>And $otherUsers unregistered users.<br><br>");
+echo("And $otherUsers unregistered users.");
 
 
 
 if ("$mac" != "")
  {
- echo("<br><br>This client is currently registered as: ");
+ echo("<br>This client is currently registered as: ");
  echo(retrieveString($mac));
- echo("<br><br>");
+ echo("<br>");
 ?>
 <form action="index.php" method="post">
 <table>

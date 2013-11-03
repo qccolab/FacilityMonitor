@@ -174,7 +174,7 @@ if ("$mac" != "")
 ?>
 <form action="index.php" method="post">
 <table>
-<tr><td><font>String:</td><td><input name=string size=50 maxlength=50><br></td></tr>
+<tr><td><font>String:</td><td><input name=string size=30 maxlength=50><br></td></tr>
 <tr><td><font>Password:</td><td><input name=password type=password></td></tr>
 <tr><td><font>Password:</td><td><input name=password2 type=password></td></tr>
 <tr><td><input type=submit name=register>

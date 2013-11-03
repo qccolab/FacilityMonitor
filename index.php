@@ -148,7 +148,7 @@ $mac = resolveRemoteMac();
 if (isset($_POST['register']))
     register($mac);
 
-echo("$MOTD<BR><BR>");
+echo("$MOTD");
 $ret = getConnectedMachines();
 $otherUsers = 0;
 foreach ($ret as $key => $val) {

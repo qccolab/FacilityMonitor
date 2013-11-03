@@ -164,10 +164,7 @@ foreach ($ret as $key => $val) {
     
 echo("<br>And $otherUsers unregistered users.<br><br>");
 
-echo("If you're at the QC Co-Lab, and you own the client machine you're accessing this page from");
-echo(" you can register it so that others can know when you're at the QC Co-Lab.  You may use any string you like but please do not be crude.");
-echo(" The password field is optional, but using it will prevent future users from changing the registration of this machine.");
-echo(" If you'd rather not show up on the facility monitor at all, simply register with the id 'ignoreme'.  Your device will not appear as either a guest or a registered user.");
+
 
 if ("$mac" != "")
  {
